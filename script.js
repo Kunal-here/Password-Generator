@@ -53,8 +53,19 @@ inputSlider.addEventListener('input',()=>{
 
 
 genBtn.addEventListener('click',()=>{
-    passBox.value = generatePassword();
+    
+        passBox.value = generatePassword();
+    })      
+
+copyIcon.addEventListener('click', ()=>{
+    if(passBox.value != '' || passBox.value.length >= 1) {
+    navigator.clipboard.writeText(passBox.value);
+    copyIcon.title = "Password Copied!"
+    copyIcon.classList.toggle("fa-check");
+}
 })
+
+
 
 let lowerChars = "abcdefghijklmnopqrstuvwxyz";
 let upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
