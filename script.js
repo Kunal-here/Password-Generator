@@ -9,42 +9,6 @@ let genBtn = document.getElementById("genBtn");
 let copyIcon = document.getElementById("copyIcon");
 
 
-// sliderValue.textContent = inputSlider.value;
-// inputSlider.addEventListener('input',()=>{
-//     sliderValue.textContent = inputSlider.value;
-// })
-
-// genBtn.addEventListener('click',()=>{
-//     passBox.value = generatePassword();
-// })
-
-// let lowerChars = "abcdefghijklmnopqrstuvwxyz";
-// let upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// let allNumbers = "0123456789";
-// let allSymbols = "~!@#$%^&*"; 
-
-// function generatePassword(){
-//     let genPassword = "";
-//     let allChars = "";
-
-//     allChars += lowercase.checked ? lowercase : "";
-//     allChars += uppercase.checked ? upperChars : "";
-//     allChars += numbers.checked ? allNumbers : "";
-//     allChars += symbols.checked ? allSymbols : "";
-
-//     if(allChars == "" || allChars.length == 0){
-//         return genPassword;
-//     }
-
-//     let i = 0;
-//     while(i <= inputSlider.value){
-//         genPassword += allChars.charAt(Math.floor(Math.random() * allChars.length))
-//         i++;
-//     }
-
-//     return genPassword;
-// }
-
 
 sliderValue.textContent = inputSlider.value;
 inputSlider.addEventListener('input',()=>{
